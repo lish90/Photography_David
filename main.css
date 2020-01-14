@@ -6,35 +6,71 @@
 }
 html {
     font-size: 62.5%;
+    --header1: calc(2rem + 1vw);
+    --header2: calc(3.5rem + 1vw);
+    --header3: calc(3rem + 1vw);
+    --header4: calc(2.4rem + 1vw);
+    --text: calc(1.5rem + 1vw);
+    --big: calc(2rem + 1vw);
+    --special-color: #906272;
+    --background-color: #414141;
+    --grey-text: #525252;
+
 }
 body{
     font-family: 'Poppins', sans-serif;
 }
 h1 {
-    font-size: 2.6rem;
+    font-size: var(--header1);
 }
 li,
 button,
 label,
 input,
 p{
-    font-size: 2rem;
+    font-size: font-size: var(--text);
 }
 h2{
-    font-size: 4.8rem;
+    font-size: font-size: var(--header2);
 }
 h3{
-    font-size: 3rem;
-    font-weight: normal;
+    font-size: var(--header3);
 }
 h4,h5 {
-    font-size: 2.8rem;
+    font-size:font-size: var(--header4);
+}
+ul{
+    list-style: none;
 }
 a{
-color: white;
+
 text-decoration: none;   
 }
-button{
+@font-face{
+    font-family: logo;
+    src: url("/fonts/Monoton/Monoton-Regular.ttf");
+}
+@font-face{
+    font-family: Signature;
+    src: url("/fonts/Homemade_Apple/HomemadeApple-Regular.ttf");
+}
+@font-face{
+    font-family: detail;
+    src: url("/fonts/Caveat/Caveat-Regular.ttf");
+}
+@font-face{
+    font-family: paragraphy;
+    src: url("/fonts/Montserrat/Montserrat-Regular.ttf");
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+/* button{
  padding: 2rem 6rem;
  background: #4c6e97;
  border: none;
@@ -43,4 +79,4 @@ button{
  cursor: pointer;
  transition: background 0.5s ease-in-out;
 
-}
+} */
