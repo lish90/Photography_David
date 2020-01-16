@@ -1,4 +1,4 @@
-* gobal styles */
+/* gobal styles */
 * {
     margin: 0;
     padding: 0;
@@ -17,6 +17,7 @@ html {
     --grey-text: #525252;
 
 }
+
 body{
     font-family: 'Poppins', sans-serif;
 }
@@ -70,6 +71,7 @@ text-decoration: none;
     align-items: center;
 
 }
+
 /* button{
  padding: 2rem 6rem;
  background: #4c6e97;
